@@ -1,0 +1,5 @@
+<div class="page-content">
+  <img *ngIf="imgUrl" [src]="imgUrl" alt="Page Image">
+  <h1 [class.book-title]="isTitlePage">{{ title }}</h1>
+  <p [class.book-subtext]="isTitlePage">{{ pageText }}</p>
+</div>

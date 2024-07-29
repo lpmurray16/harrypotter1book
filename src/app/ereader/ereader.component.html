@@ -1,0 +1,6 @@
+<div class="ereader">
+  <div class="page" *ngFor="let page of pages; let i = index" [class.active]="i === currentPage">
+    <app-page [imgUrl]="page.imgUrl" [title]="page.title" [pageText]="page.pageText"
+      [isTitlePage]="page.isTitlePage"></app-page>
+  </div>
+</div>
