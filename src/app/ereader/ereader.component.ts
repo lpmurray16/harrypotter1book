@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { pages } from '../book-contents/pages-content';
 
 @Component({
   selector: 'app-ereader',
@@ -6,11 +7,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./ereader.component.scss']
 })
 export class EReaderComponent implements OnInit {
-  pages = [
-    { imgUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/68d0af62838965.5a9dd3fcbb106.png', title: 'Harry Potter and the Sorcerer\'s Stone', pageText: 'By JK Rowling', isTitlePage: true },
-    { imgUrl: 'assets/img2.jpg', title: 'Page 2 Title', pageText: 'Page 2 Content' },
-    { imgUrl: 'assets/img3.jpg', title: 'Page 3 Title', pageText: 'Page 3 Content' }
-  ];
+  pages = pages;
   currentPage = 0;
 
   ngOnInit(): void {
