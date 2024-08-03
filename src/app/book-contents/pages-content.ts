@@ -9,14 +9,14 @@ export const pages = [
   },
   {
     imgUrl:
-      'https://i.pinimg.com/1200x/04/67/9c/04679c74e5fcfc76115fb7a6c42f5af1.jpg',
-    title: 'The Boy Who Lived',
+      'https://media.harrypotterfanzone.com/dumbledore-in-privet-drive-minalima-illustrated.jpg',
+    title: 'On a dark and quiet night...',
     pageText:
-      'On a dark and seemingly normal night, a mysterious figure appeared on the street of Private Drive.',
+      'A mysterious figure appeared on the street of Private Drive. He was dressed in a long cloak and a pointed hat and had a long white beard. And with the flick of a lighter all the street lights went out.',
   },
   {
-    imgUrl: 'assets/img3.jpg',
-    title: 'Page 3 Title',
-    pageText: 'Page 3 Content',
+    imgUrl: 'https://i.pinimg.com/1200x/04/67/9c/04679c74e5fcfc76115fb7a6c42f5af1.jpg',
+    title: 'A loud rumbling sound broke the silence...',
+    pageText: 'A bright light from the sky came crashing down beside the strange figure. It was an enormous and bushy man on a motorcycle. He was carrying what seemed to be a bundle of blankets.',
   },
 ];
