@@ -26,8 +26,11 @@ h1 {
 p {
     font-size: 1.2em;
     font-family: var(--reg-text);
+    text-align: left;
+    line-height: 1.5em;
 
     &.book-subtext {
         font-family: var(--kinda-cursive);
+        text-align: center;
     }
 }

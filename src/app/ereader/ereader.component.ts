@@ -11,6 +11,10 @@ export class EReaderComponent implements OnInit {
   currentPage = 0;
 
   ngOnInit(): void {
+    const storedPage = localStorage.getItem('currentPage');
+    if(storedPage) {
+      this.currentPage = parseInt(storedPage);
+    }
     this.showPage(this.currentPage);
   }
 
@@ -21,8 +25,12 @@ export class EReaderComponent implements OnInit {
   nextPage(): void {
     if (this.currentPage < this.pages.length - 1) {
       this.currentPage++;
+      this.setCurrentPageInLocalStorage(this.currentPage);
       this.showPage(this.currentPage);
     }
+  }
+  setCurrentPageInLocalStorage(currentPage: number) {
+    localStorage.setItem('currentPage', currentPage.toString());
   }
 
   previousPage(): void {
