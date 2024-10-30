@@ -18,6 +18,10 @@ h1 {
     margin: 10px 0;
     font-family: var(--paint-like);
 
+
+    @media(min-width: 1200px) {
+        max-width: 50%;
+    }
     &.book-title {
         font-family: var(--fancy);
     }
@@ -29,6 +33,9 @@ p {
     text-align: left;
     line-height: 1.5em;
 
+    @media(min-width: 1200px) {
+        max-width: 50%;
+    }
     &.book-subtext {
         font-family: var(--kinda-cursive);
         text-align: center;

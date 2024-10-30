@@ -42,9 +42,9 @@ export class EReaderComponent implements OnInit {
 
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
-    if (event.key === 'ArrowRight') {
+    if (event.key === 'ArrowRight' || event.key === 'd') {
       this.nextPage();
-    } else if (event.key === 'ArrowLeft') {
+    } else if (event.key === 'ArrowLeft' || event.key === 'a') {
       this.previousPage();
     }
   }
